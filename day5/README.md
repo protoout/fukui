@@ -1,6 +1,9 @@
 アウトライン(計65分)
 - 準備と自己紹介(4分)
 - 内容の説明：n8nでAIを使った自動化ツールをつくってみよう(1分)
+- 
+  <img width="1741" height="533" alt="image" src="https://github.com/user-attachments/assets/95b15b45-1c95-48b4-a431-c9aa2000e401" />
+
 - n8nとは？(3分)
 - AI機能の紹介(5分)
   - フローの作成やデバッグにAI機能を使えるので初心者でも使いやすい
