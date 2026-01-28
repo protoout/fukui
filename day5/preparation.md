@@ -6,9 +6,52 @@
 ---
 
 # 事前準備
-## n8nの登録をお願いいたします。
+## n8nのアカウント作成をお願いいたします
+n8n (エヌエイトエヌ) は様々なサービス同士をつないで自分で自動化ツールを作成することができるサービスです。
+イマージはこんな感じです。
+
+
+詳しいことは講義で紹介しますので、まずはアカウントをつくってみましょう。
+
+1. こちらから `Sign in` をしましょう
 
 https://n8n.io/
+
+n8n にはクラウド版とローカルホスト版です。
+今回使うのはクラウド版です。
+
+ローカルホストとは、ソースコードが入ったプロジェクトを自分のPCやサーバー上にインストールし使うことを指します。
+Github 上にプロジェクトがあります。AIを稼働させる費用は掛かりますが、ライセンスは無料で使用することができます。
+
+https://github.com/n8n-io/self-hosted-ai-starter-kit
+
+2. Start a free trial から進みます
+2週間の無料クレジットが付与されます。
+
+Company email と要求されますが普段使っているメールアドレスで大丈夫です。
+
+入力したメールアドレス宛てに送られるコードを入力するか、メールに記載のリンクにアクセスし検証を完了します。
+
+3. ユーザー名などを入れますす
+任意のユーザー名(Full name)、パスワード、アカウント名を入力して、"Start free 14-day trial" に進みます。
+※アカウント名は既に誰かが使っている場合は別の名前にしてください。
+
+4. あとはアンケートに回答すればOKです
+アンケートを求められます。回答例は以下の通りです。
+- What is the size of your company?: Only me
+- What team are you on?: Support
+- Have you built something yourself in the past ?: Not yet
+- Which of these do you feel comfortable doing?: Writing JavaScript functions
+- How did you hear about n8n?: Google
+
+最後にチームをワークスペースに招待するかを聞かれますが、"Skip"で問題ありません
+
+5. これでアカウント作成は完了です
+"Start automating" で進みましょう。
+英語ですがチュートリアル動画もあるので、気になる方はチェックしてください。
+
+これで登録は終了です。お疲れまでした。
+
 
 
 ### 登録する際の注意点
