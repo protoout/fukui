@@ -1,6 +1,6 @@
 # 事前準備
 ## n8n のアカウント作成をお願いいたします
-n8n (エヌエイトエヌ) は様々なサービス同士をつないで自分で自動化ツールを作成することができるサービスです。  
+**n8n (エヌエイトエヌ)** は様々なサービス同士をつないで自分で自動化ツールを作成することができるサービスです。  
 イメージはこんな感じ。
   
 <a href="https://gyazo.com/fe60c3c17874b585da86d4416f037297"><img src="https://i.gyazo.com/fe60c3c17874b585da86d4416f037297.png" alt="Image from Gyazo" width="450px"/></a>
@@ -32,7 +32,7 @@ https://n8n.io/
 
 **2. メールアドレスの登録**
 
-Company email と要求されますが普段使っているメールアドレスで大丈夫です。  
+Company e-mail を要求されますが普段使っているメールアドレスで大丈夫です。  
   
 <a href="https://gyazo.com/dc24782a1c8db15200bcfa78510d1814"><img src="https://i.gyazo.com/dc24782a1c8db15200bcfa78510d1814.png" alt="Image from Gyazo" width="450px"/></a>  
 
