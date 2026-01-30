@@ -46,6 +46,9 @@ Company email と要求されますが普段使っているメールアドレス
 ※アカウント名は既に誰かが使っている場合、入力をし直すよう指示があります。その際は別の名前にしてください。  
   
 <a href="https://gyazo.com/f84193f0fcaf9a7c0c4449816ed4c742"><img src="https://i.gyazo.com/f84193f0fcaf9a7c0c4449816ed4c742.png" alt="Image from Gyazo" width="450px"/></a>
+
+> [!IMPORTANT]
+> アカウント名、パスワード、メールアドレスはサインイン時に使うので、手元に控えておいてください。
   
 **4. あとはアンケートに回答すればOKです**
   
