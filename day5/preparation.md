@@ -69,11 +69,12 @@ Company e-mail を要求されますが普段使っているメールアドレ�
 
 **5. これでアカウント作成は完了です**
 
-`Start automating` で進みましょう。このような画面になればOKです。
-
 英語ですが[チュートリアル動画](https://youtu.be/4cQWJViybAQ?si=UwpnnRzyUWSk-VXN)もあるので、気になる方はチェックしてください。
   
 <a href="https://gyazo.com/b4539523a7f08eb2563e6a7a5a97638c"><img src="https://i.gyazo.com/b4539523a7f08eb2563e6a7a5a97638c.png" alt="Image from Gyazo" width="450px"/></a>
+
+`Start automating` で進みましょう。このような画面になればOKです。  
+<a href="https://gyazo.com/c50fc53c1d1f238d0f57046444968511"><img src="https://i.gyazo.com/c50fc53c1d1f238d0f57046444968511.png" alt="Image from Gyazo" width="450px"/></a>
 
 これで登録は終了です。お疲れまでした。
 
