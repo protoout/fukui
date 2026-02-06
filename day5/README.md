@@ -1,5 +1,5 @@
 # n8n を使って自動化ツールの開発に挑戦してみよう
-特に海外で人気のあるワークフロー自動化ツール、n8n (エヌエイトエヌ) を使って、"フローグラマー(Flowgrammer)"に挑戦してみましょう。
+特に海外で人気のあるワークフロー自動化ツール、**n8n (エヌエイトエヌ)** を使って、**"フローグラマー(Flowgrammer)"** に挑戦してみましょう。
 今回は、動画作成から YouTube へのアップロードまでを自動化する方法を紹介します。
 
 ## 今日つくるもの
@@ -24,7 +24,11 @@
 
 https://app.n8n.cloud/login
 
-アカウントがない場合やアカウント名が誤っている場合は以下のように表示されます。このようになってしまう方は教えて下さい。  
+何かしらワークフローをスタートできそうな画面になっていれば OK です。例えば、このような画面から始まる人は `Start from scratch` から始めましょう。  
+<a href="https://gyazo.com/75833048bbec2e28872856fd1b0c61a8"><img src="https://i.gyazo.com/75833048bbec2e28872856fd1b0c61a8.png" alt="Image from Gyazo" width="450px"/></a>  
+  
+> [!WARNING]
+> アカウントがない場合やアカウント名が誤っている場合は以下のように表示されます。このようになってしまう方は教えて下さい。  
 
 <a href="https://gyazo.com/f32050fca9df56ee2f451d49e76ce26a"><img src="https://i.gyazo.com/f32050fca9df56ee2f451d49e76ce26a.png" alt="Image from Gyazo" width="450px"/></a>  
 
@@ -38,8 +42,8 @@ n8n はオープンソースのワークフロー自動化ツールです。プ�
 - 利用できるサービスが豊富
 約8千ものテンプレートが用意されているので普段使っている主要なサービスは連携できると思います。
 参考:  
-  - [こちら](https://n8n.io/workflows/)から自分が知っているサービスを検索してみましょう。
-  - [こちら](https://n8n.io/integrations/)からどのような自動化ができるかを調べることもできます。
+  - [こちら](https://n8n.io/integrations/)から自分が知っているサービスを検索してみましょう。
+  - [こちら](https://n8n.io/workflows/)からどのような自動化ができるかを調べることもできます。
   
 <a href="https://gyazo.com/e9387409a1951d6023808f7d1698af66"><img src="https://i.gyazo.com/e9387409a1951d6023808f7d1698af66.png" alt="Image from Gyazo" width="450px"/></a>  
 
@@ -58,8 +62,6 @@ n8n はオープンソースのワークフロー自動化ツールです。プ�
 <a href="https://gyazo.com/0030e70ba7e6d7d397b535254b13dbe4"><img src="https://i.gyazo.com/0030e70ba7e6d7d397b535254b13dbe4.png" alt="Image from Gyazo" width="600px"/></a>
   
 **1. n8n Form**
-このような画面から始まる人は `Run from scratch` から始めましょう。  
-<a href="https://gyazo.com/75833048bbec2e28872856fd1b0c61a8"><img src="https://i.gyazo.com/75833048bbec2e28872856fd1b0c61a8.png" alt="Image from Gyazo" width="450px"/></a>
   
 初めは `Add first Step` を選び右側の検索バーからノードを探します。  
 
@@ -82,15 +84,19 @@ n8n はオープンソースのワークフロー自動化ツールです。プ�
   
 <a href="https://gyazo.com/ce0311512e893bc8465f4cbb9a0da6b7"><img src="https://i.gyazo.com/ce0311512e893bc8465f4cbb9a0da6b7.png" alt="Image from Gyazo" width="450px"/></a>  
 
-「＋」を押して、`Data Transformation`(既に候補に出てきていると思います) から `Edit Fields` を選択します。
+「＋」を押して、`Data Transformation`(既に候補に出てきていると思います) から `Edit Fields` を選択します。(もしくは `Edit Fields` を検索してください)
   
 <a href="https://gyazo.com/b1156c0d4d2cf8c864de4fedd58630eb"><img src="https://i.gyazo.com/b1156c0d4d2cf8c864de4fedd58630eb.png" alt="Image from Gyazo" width="450px"/></a>  
+
+ノードを出せたら「×」で閉じます。    
   
 **3. OpenAI**
 続いて、加工したデータを生成 AI に渡します。
 ノードをつなげて、`OpenAI` から `Generate an image` を選びます。
   
 <a href="https://gyazo.com/dd179b43d38198f29a04ab308ec402bf"><img src="https://i.gyazo.com/dd179b43d38198f29a04ab308ec402bf.png" alt="Image from Gyazo" width="450px"/></a>
+   
+ノードを出せたら「×」で閉じます。  
   
 > [!NOTE]
 > 動画を生成するときは `Generate a video` を選びます。
@@ -100,6 +106,8 @@ n8n はオープンソースのワークフロー自動化ツールです。プ�
 `Dropbox` から `Upload a file` を選択します。
 
 <a href="https://gyazo.com/809f46217fc43e19cde2e6e9af767df9"><img src="https://i.gyazo.com/809f46217fc43e19cde2e6e9af767df9.png" alt="Image from Gyazo" width="450px"/></a>
+  
+ノードを出せたら「×」で閉じます。  
   
 > [!NOTE]
 > これ以外にも Google Drive や YouTube など様々なサービスにデータをアップロードできます。
@@ -226,6 +234,12 @@ Workflows タブから再び自分がつくったワークフローを開きま�
 これで画像生成からアップロードまでの一連の流れを組むことができました。お疲れ様でした。
   
 <a href="https://gyazo.com/7271729a6da2afc880313c0c9902d5ce"><img src="https://i.gyazo.com/7271729a6da2afc880313c0c9902d5ce.png" alt="Image from Gyazo" width="600px"/></a>  
+
+皆さんがつくった画像は以下のリンクかスマホでQRコードを読んでいただくと閲覧できます。    
+https://www.dropbox.com/scl/fo/gna6572rcxw2hngqjr5m5/ACxwNHwmCnhU4ReiSstdphw?rlkey=m35atup0twf1epy61kzej3vks&st=i0kxwsvu&dl=0  
+  
+<a href="https://gyazo.com/eba946fd03b8e2321ad60d085bb2ee7a"><img src="https://i.gyazo.com/eba946fd03b8e2321ad60d085bb2ee7a.png" alt="Image from Gyazo" width="250px"/></a>  
+
   
 ---  
 
@@ -282,7 +296,7 @@ API Key をコピーし n8n の認証情報に追加します。
  
 ## YouTube の自動アップロード
 ### Edit Fields
-動画投稿のためのメタデータを準備していきます。要するに YouTube をアップする際に YouTube が求めている情報やデータ形式に加工していくということです。
+動画投稿のためのメタデータを準備していきます。要するに YouTube をアップする際に YouTube が求めている情報やデータ形式に加工していくということです。`Edit Fields` は二度目ですね。  
   
 <a href="https://gyazo.com/42b6684737e6cb787a9011c761a7c8ee"><img src="https://i.gyazo.com/42b6684737e6cb787a9011c761a7c8ee.png" alt="Image from Gyazo" width="450px"/></a>
   
@@ -331,6 +345,7 @@ API Key をコピーし n8n の認証情報に追加します。
 - `Credential to connect with`:  先ほど作った認証情報(「YouTube account」などの名前になっていると思います)
 - `Title`: {{ $json.title }} (左側の Schema から `title` をドラッグ&ドロップしましょう)
 - `Region Code`: Japan - JP
+- `Category Name or ID`: Education
 - `Input Binary Field`: videoData
 
 `Options` でフィールドを追加します。
