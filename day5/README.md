@@ -4,7 +4,10 @@
 
 ## 今日つくるもの
 こんなワークフローをつくります。  
-<a href="https://gyazo.com/4c1f37c03de873798f42c87cd5253967"><img src="https://i.gyazo.com/4c1f37c03de873798f42c87cd5253967.png" alt="Image from Gyazo" width="600px"/></a>
+本当のゴール：自動 YouTuber ワークフロー  
+今日のゴール：自動画像アップロードワークフロー  
+
+<a href="https://gyazo.com/4c1f37c03de873798f42c87cd5253967"><img src="https://i.gyazo.com/4c1f37c03de873798f42c87cd5253967.png" alt="Image from Gyazo" width="900px"/></a>
 
 > [!IMPORTANT]
 > 今回の講義では時間の都合上、以下の点を変更して実装します。完全版をつくるためのフローも資料では紹介しているので是非チャレンジしてみてください。  
@@ -271,7 +274,7 @@ https://sora.chatgpt.com/explore
   
 > [!WARNING]
 > SORA で動画をつくる際、従量課金で費用が掛かります。そのため支払方法の登録が必要です。  
-> 詳しくは[プライスリスト](https://openai.com/ja-JP/api/pricing/)を参照してください。
+> 詳しくは[プライスリスト](https://openai.com/ja-JP/api/pricing/)を参照してください。  
 > <a href="https://gyazo.com/10b7c83c8d75b94f81b6fa7b897fb958"><img src="https://i.gyazo.com/10b7c83c8d75b94f81b6fa7b897fb958.png" alt="Image from Gyazo" width="400px"/></a>
 
 API Key をコピーし n8n の認証情報に追加します。  
