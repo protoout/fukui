@@ -365,6 +365,105 @@ API Key をコピーし n8n の認証情報に追加します。
 --- 
 
 ## Tips 紹介
-### API Keyって？
-### 自分のDropboxと連携したいとき
-### n8n の AI 機能について
+### 1. ローカルホスト版、実は簡単に使えるという話  
+n8n、クラウド版中々高いです。そこでローカルホスト版も紹介しておきます。ローカルホスト版は自分の PC やサーバー環境に n8n をインストールまたは構築することです。  
+
+こちらに n8n の GitHub プロジェクトがあります。  
+
+https://github.com/n8n-io
+
+これだけではいまいち何をすれば良いのかわからないかもしれませんが安心してください。  
+
+セルフホストのスタートキットが用意されています。
+https://github.com/n8n-io/self-hosted-ai-starter-kit  
+
+この画面から `Code` ボタンを押して`GitHub Codespaces` 立ち上げます。
+
+<a href="https://gyazo.com/9339ad5b8e88f5478337ef3b64db0a18"><img src="https://i.gyazo.com/9339ad5b8e88f5478337ef3b64db0a18.png" alt="Image from Gyazo" width="600px"/></a>
+
+> [!NOTE]
+> GitHub Codespaces は GitHub が提供している利用者向けのクラウドサーバーです。GitHub でつくったプロジェクトなどを動かすことができます。  
+
+このような画面が立ち上がったら、下の`ターミナル`に次のコードを打ち込みエンターキーで実行します。
+  
+<a href="https://gyazo.com/44b9a4ef1171ac06f8b2a99e1e03ef27"><img src="https://i.gyazo.com/44b9a4ef1171ac06f8b2a99e1e03ef27.png" alt="Image from Gyazo" width="450px"/></a>
+  
+```bash
+docker run -it --rm \
+  --name n8n \
+  -p 5678:5678 \
+  -v n8n_data:/home/node/.n8n \
+  docker.n8n.io/n8nio/n8n
+```
+※貼り付けが上手くいかないかもしれません。右クリックで貼り付けられます。また貼り付け許可を求められる場合は許可しておきしましょう。
+
+<a href="https://gyazo.com/d777e0ca512852c9a442be969c0802b3"><img src="https://i.gyazo.com/d777e0ca512852c9a442be969c0802b3.png" alt="Image from Gyazo" width="450px"/></a>
+
+
+
+
+あとはクラウド版と一緒ですね。色々設定したらスタートできます。  
+
+<a href="https://gyazo.com/6329f187aecf8c0f4344d6c6743fce02"><img src="https://i.gyazo.com/6329f187aecf8c0f4344d6c6743fce02.png" alt="Image from Gyazo" width="450px"/></a>  
+
+<a href="https://gyazo.com/70c36a607b8173fb15b8a9151e6a5129"><img src="https://i.gyazo.com/70c36a607b8173fb15b8a9151e6a5129.png" alt="Image from Gyazo" width="450px"/></a>
+
+> [!NOTE]
+> `ターミナル`の横の`ポート`というタブで`表示範囲`を右クリックし `Private` → `Public` と変更すると横にあるURLを自分だけでなく他の人も使うことができます。  
+> <a href="https://gyazo.com/d39d030b5684b5863757046d82f93a5d"><img src="https://i.gyazo.com/d39d030b5684b5863757046d82f93a5d.png" alt="Image from Gyazo" width="927"/></a>
+
+> [!NOTE]
+> なお、スタートの仕方は[こちら](https://docs.n8n.io/hosting/installation/docker/)にドキュメントがあります。Docker と呼ばれるコンテナ技術(設計図を一塊にしたもの)のサービスを使って環境を構築します。
+
+### 2. n8n の AI 機能について
+`n8n AI Beta` という機能があり、エラーができ時に原因の探索と解決案を提示してくれます。これはめちゃくちゃ便利なのでぜひ一度体験してみてください。  
+<a href="https://gyazo.com/71af11a85d5663fb538290459fd03108"><img src="https://i.gyazo.com/71af11a85d5663fb538290459fd03108.png" alt="Image from Gyazo" width="450PX"/></a>  
+
+また、フローも作ってくれます。実は今回のハンズオンもベースとなるフローは AI につくってもらいました。  
+<a href="https://gyazo.com/26403d1c7583b5035b67f1a58d3d9811"><img src="https://i.gyazo.com/26403d1c7583b5035b67f1a58d3d9811.png" alt="Image from Gyazo" width="450px"/></a>  
+  
+<a href="https://gyazo.com/810995c0d0c7bc58b64695d29a9a23d1"><img src="https://i.gyazo.com/810995c0d0c7bc58b64695d29a9a23d1.png" alt="Image from Gyazo" width="450px"/></a>  
+
+
+### 3. API Keyって？
+API (Application Programming Interface) とは、**サービスを使う、繋ぐための窓口のようなものです。**  
+今回「さらにつくってみたい人へ」まで進んだ人は OpenAI の API Key を n8n の認証情報に入れたはずです。これは、OpenAI のサービスを使うための秘密の暗号を n8n に登録し、n8n でOpenAIのサービスを使えるようにしました。  
+OpenAI を例にしてみましょう。ここでいう「サービス」は ChatGPT のように私たちがそのままサービスとして使える形のものでなく裏側で機能しているプログラムの一部です。  
+少し見づらいですが、こちらに OpenAI の API のプライスリストがあります。  
+
+https://openai.com/ja-JP/api/pricing/  
+
+「アシスタントとして応答する」「テキストから画像をつくる」など機能として切り出されていてユーザーはこれを使うことができます。  
+API 提供側の意図としては、自社サービスのレシピ(具体的なソ－スコード等)を公開せずに色々な顧客に使ってもらうことができます。  
+ユーザーも自分ですべてをつくらなくても便利な他社のサービスを手軽に使うことができます。  
+
+そして、API key はそのためのアプリケーションの識別や許可に関する認証情報となります。特徴としては、長期に使うことができ、同一サービス内で複数つくることができる場合が多く、また使う機能に条件や制限を加えられます。
+例えば、「データの読み込みはするけど書き込みはしない」など。  
+
+<a href="https://gyazo.com/14aa73b6608a89fc98a65dc946141a32"><img src="https://i.gyazo.com/14aa73b6608a89fc98a65dc946141a32.png" alt="Image from Gyazo" width="450px"/></a>
+
+
+### 4. 自分の Dropbox と連携したいとき  
+もし自分のDropboxと連携したいときは、n8n の Dropbox の認証情報にご自身のアクセストークンを入れればよいです。  
+<a href="https://gyazo.com/3bfdf04e61b365b3cee00065798aa3a4"><img src="https://i.gyazo.com/3bfdf04e61b365b3cee00065798aa3a4.png" alt="Image from Gyazo" width="450px"/></a>
+  
+アクセストークンの取得は通常の Dropbox の Web サイトではなく開発者用のページから行います。
+
+https://www.dropbox.com/developers/apps
+
+> [!NOTE]  
+> こちらの画像内の [Open docs](https://docs.n8n.io/integrations/builtin/credentials/dropbox/)というところにもやり方が書いてあります。
+  
+アプリを作るの？とちょっと尻込みしてしまうかもしれませんが気軽に考えましょう。  
+<a href="https://gyazo.com/ee532cc061b046457b129b99a48d2e5d"><img src="https://i.gyazo.com/ee532cc061b046457b129b99a48d2e5d.png" alt="Image from Gyazo" width="450px"/></a>  
+  
+<a href="https://gyazo.com/edb17d23f6a88f67135577b82cbb6953"><img src="https://i.gyazo.com/edb17d23f6a88f67135577b82cbb6953.png" alt="Image from Gyazo" width="450px"/></a>
+  
+名前と権限さえ決めてしまえば5分くらいでつくることができます。  
+<a href="https://gyazo.com/bc072136bf1daf51a479a6dedf36037f"><img src="https://i.gyazo.com/bc072136bf1daf51a479a6dedf36037f.png" alt="Image from Gyazo" width="450px"/></a>  
+  
+<a href="https://gyazo.com/dd18ed97944c75318684663ea0e8de76"><img src="https://i.gyazo.com/dd18ed97944c75318684663ea0e8de76.png" alt="Image from Gyazo" width="450px"/></a>
+  
+なお、API Key とは違いますが、サービスを使う入館証のような意味では共通しています。
+アクセストークンは、特にセキュリティを考慮して設計されており、有効期限が短期であることが多く、期限が切れたら再発行をします。ユーザーに権限を与え、特定のデータや機能へのアクセスを許可します。  
+
