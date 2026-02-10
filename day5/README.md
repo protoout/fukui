@@ -207,7 +207,8 @@ n8n はオープンソースのワークフロー自動化ツールです。プ�
 
 <a href="https://gyazo.com/d8aa43e36cfd8111d370c5500dc22299"><img src="https://i.gyazo.com/d8aa43e36cfd8111d370c5500dc22299.png" alt="Image from Gyazo" width="450px"/></a>
   
-**Access Token に、講義中にお知らせする値をコピーして貼り付けてください。**
+> [!IMPORTANT]
+> **Access Token に、講義中にお知らせする値をコピーして貼り付けてください。**
 
 その他は編集不要です。`Save` を押して保存しましょう。
 「Connection tested successfully」という文字が出てきたらOKです。
