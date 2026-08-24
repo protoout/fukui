@@ -18,7 +18,7 @@
 2. ログイン後バージョンが「1.16.1」になっているか確認してください。（バージョンが異なる場合は、更新しましょう。）  
 以下のように、アプリ一覧（スタジオ）の画面が表示されていればOKです。
 
-> <img src="https://i.gyazo.com/8623278b392c8fad29fdabc2f293b869.png" width="450px"/>
+> <img src="https://i.gyazo.com/8623278b392c8fad29fdabc2f293b869.png" width="70%"/>
 
 ## 3. Gemini APIキーを準備する
 
@@ -26,5 +26,5 @@
 
 2. APIキーを作成し、Geminiのプロバイダーのインストールが完了されていたらOKです。
 
-> <img src="https://i.gyazo.com/cb449707e311504bea90c5558d1e00a8.png" width="450px"/>
+> <img src="https://i.gyazo.com/cb449707e311504bea90c5558d1e00a8.png" width="70%"/>
 
