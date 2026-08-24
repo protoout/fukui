@@ -26,6 +26,19 @@ MCPを使うと、AIが接続された外部ツールやデータを利用し、
 
 #### ◾️ 例：メール
 
+例えば、皆さんが普段使っているメール（GmailやOutlookなど）で、必要な情報を探す場面を考えてみましょう。
+
+これまでは、メールを開いてキーワードで検索し、検索結果から該当しそうなメールを一件ずつ開いて内容を確認する必要がありました。  
+しかしMCPを使うと、AIがメールサービスと接続し、必要なメールを検索できます。さらに、見つかったメールの内容を整理し、分かりやすくまとめてもらうこともできます。
+
+> <img src="https://i.gyazo.com/b8a066397203424e68fa22fc7be60d2b.png" width="70%"/>
+
+メール以外にも、Excelなどさまざまなサービスと接続するMCPサーバーがあります。
+
+参考
+- [話題のGoogle Workspace MCPサーバーをさっそく使ってみた](https://www.yoshidumi.co.jp/collaboration-lab/gws-mcp-server)
+- [【Copilot Studio】OutlookのMCPサーバーが意外と便利！情報収集⇒メール送信](https://mofumofupower.hatenablog.com/entry/2025/06/21/001557)
+- [Excel MCP とは｜スプレッドシートを Claude／Cursor から操作するときの仕組みとリスク](https://aurant-technologies.com/blog/claude-excel-mcp-explained-implementation-15429/)
 
 ### 1-3. MCPを使うには
 
