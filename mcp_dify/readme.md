@@ -12,13 +12,11 @@
 - [基本ハンズオン：DifyでMCPを使ってみよう](./03_mcp_agent.md)
 
 Geminiモデルでうまくいかない場合は以下を試しましょう。
-- [OpenRouterのAPIキー取得・設定方法](./openRouter.md)
-- [GroqのAPIキー取得・設定方法]()
-- OpenAIのAPIキー（従量課金制）
 
+- [OpenRouterのAPIキー取得・設定方法](./openRouter.md)
+- [GroqのAPIキー取得・設定方法](./groq.md)
+- OpenAIのAPIキー（従量課金制）
 
 ## 参考
 
 - [応用：GitHub CodespacesでMCPを公開しよう](./04_mcp_codespaces.md)
-
-
