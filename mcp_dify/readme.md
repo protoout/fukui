@@ -10,9 +10,8 @@
 2. [座学：MCPとDifyについて知ろう](./02_mcp_dify.md)
 3. [基本ハンズオン：DifyでMCPを使ってみよう](./03_mcp_agent.md)
 
-### ◾️ Geminiモデルでうまくいかない場合は以下を試しましょう。
-
-1. [Tips：OpenRouterの設定方法](./openRouter.md)
+Geminiモデルでうまくいかない場合は以下を試しましょう。
+- [Tips：OpenRouterの設定方法](./openRouter.md)
 
 
 ## 参考
