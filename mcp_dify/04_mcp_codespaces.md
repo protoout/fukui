@@ -1,6 +1,7 @@
 # 応用：GitHub CodespacesでMCPを公開しよう
 
-ここでは、GitHub Codespacesを使って、MCP Serverを起動・公開する手順を体験します。
+今回MCP ServerのURLを使ったと思いますが、こちらの工程は事前に講師側で準備していました。   
+ここでは、自分でもできるようにGitHub Codespacesを使って、MCP Serverを起動・公開する手順を紹介します。  
 
 GitHub Codespacesを使えば、パソコンへ開発ツールをインストールしなくても、ブラウザ上に用意された開発環境を操作できます。  
 実際に自分の手でMCP Serverを動かしながら、MCPがどのように公開されているのかを試してみましょう。
