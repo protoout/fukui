@@ -1,4 +1,4 @@
-# OpenRouterの設定方法
+# OpenRouterを設定してみよう
 
 OpenRouterとは、1つのAPIキーを使って、OpenAI、Anthropic、Googleなどの多様なAIモデル（LLM）をまとめて利用できるようにするAIゲートウェイ（中継サービス）です。  
 
