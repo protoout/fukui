@@ -11,5 +11,5 @@
 2. [座学：MCPとDifyについて知ろう](./02_mcp_dify.md)
 3. [基本ハンズオン：DifyでMCPを使ってみよう](./03_mcp_agent.md)
 4. [応用：GitHub CodespacesでMCPを公開しよう](./04_mcp_codespaces.md)
-5. [Tips：OpenRouterを予備として準備する](./openRouter.md)
+5. [Tips：OpenRouterの設定方法](./openRouter.md)
 
